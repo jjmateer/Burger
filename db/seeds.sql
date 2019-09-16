@@ -6,4 +6,4 @@ VALUES
 (id, "Hamburger", false),
 (id, "Bacon-cheeseburger", false),
 (id, "Triple-hamburger", false),
-(id, "Octo-bacon-cheeseburger", false),
+(id, "Octo-bacon-cheeseburger", false);
