@@ -10,16 +10,16 @@ function printQuestionMarks(num) {
 function objToSql(ob) {
     var arr = [];
     for (var key in ob) {
-      var value = ob[key];
-      if (Object.hasOwnProperty.call(ob, key)) {
-        if (typeof value === "string" && value.indexOf(" ") >= 0) {
-          value = "'" + value + "'";
-        } 
-        arr.push(key + "=" + value);
-      }
+        var value = ob[key];
+        if (Object.hasOwnProperty.call(ob, key)) {
+            if (typeof value === "string" && value.indexOf(" ") >= 0) {
+                value = "'" + value + "'";
+            }
+            arr.push(key + "=" + value);
+        }
     }
     return arr.toString();
-  }
+}
 var orm = {
     selectAll: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
@@ -46,7 +46,7 @@ var orm = {
         queryString += " WHERE ";
         queryString += condition;
 
-        console.log(queryString);
+        // console.log(objColVals);
         connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
