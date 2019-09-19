@@ -1,3 +1,78 @@
 body{
-    background-color: blue;
+    background-image: url(/assets/img/burger.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: 'Permanent Marker', cursive;
+}
+h1{
+    text-align: center;
+    margin:auto;
+    font-size:5vw;
+    margin-bottom:1vw;
+}
+h2{
+    font-size:2vw;
+    background-color: brown;
+    width:15vw;
+    margin:auto;
+    margin-top:2vw;
+    margin-bottom:2vw;
+    text-align:center;
+    border-radius: 15px;
+}
+.container{
+    width:35vw;
+    min-height:15vw;
+    margin:auto;
+    display:flex;
+    background-color: tan;
+    border-radius: 25px;
+}
+ul{
+    width:15vw;
+    padding:1vw;
+}
+li{
+    background-color: orange;
+    margin:1vw;
+    border-radius: 5px;
+    font-size:1vw;
+}
+button{
+    background-color: yellowgreen;
+    border:none;
+    border-radius:10px;
+    height:2vw;
+    min-height:2vw;
+    font-size:1vw;
+}
+#dev{
+    border-right:solid black;
+}
+.create-form{
+    position:relative;
+    width:20vw;
+    height:10vw;
+    margin:auto;
+    padding:0;
+    display:flex;
+    background-color: tan;
+    border-radius:25px;
+    align-content: center;
+}
+#burgerInput{
+    position:absolute;
+    height:2vw;
+    width:15vw;
+    margin-top:1vw;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+#submitBtn{
+    position: absolute;
+    height:2vw;
+    width:8vw;
+    margin-top:5vw;
+    margin-left:6vw;
+    margin-right:6vw;
 }
