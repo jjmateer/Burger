@@ -51,6 +51,7 @@ button{
     height:2vw;
     min-height:2vw;
     font-size:1vw;
+    cursor: pointer;
 }
 #dev{
     border-right:solid black;
