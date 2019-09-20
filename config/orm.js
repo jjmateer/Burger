@@ -1,7 +1,6 @@
 const connection = require("../config/connection.js");
 function printQuestionMarks(num) {
     var arr = [];
-
     for (var i = 0; i < num; i++) {
         arr.push("?");
     }
@@ -37,7 +36,6 @@ var orm = {
             console.log("Sucesfully Added");
             cb(result);
         });
-
     },
     updateOne: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
@@ -45,8 +43,6 @@ var orm = {
         queryString += objToSql(objColVals);
         queryString += " WHERE ";
         queryString += condition;
-
-        // console.log(objColVals);
         connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
