@@ -1,5 +1,5 @@
-const mysql = require('mysql')
 const express = require("express");
+require('dotenv').config()
 var app = express();
 const exphbs = require("express-handlebars");
 const PORT = process.env.PORT || 8080
