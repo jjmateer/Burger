@@ -1,5 +1,5 @@
 # Burger
-# Demo:https://dashboard.heroku.com/apps/eat-da-burger22
+# Demo:https://eat-da-burger22.herokuapp.com/
 Simple application which allows users to post burgers and devour them. 
 
 This app uses a mySQL database with an ORM to store burgers and dynamically renders them to the page with handlebars.
